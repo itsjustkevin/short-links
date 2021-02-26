@@ -20,8 +20,7 @@ class CreateLinksTable extends Migration
             $table->integer('times_clicked');
             $table->timestamps();
 
-            
-            $table->foreignId('user');
+            $table->foreignId('user_id')->constrained();
         });
     }
 
